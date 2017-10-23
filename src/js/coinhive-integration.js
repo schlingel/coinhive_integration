@@ -1,8 +1,4 @@
-  console.log('loaded ...');
-
 $(document).ready(function() {
-  console.log('started ...');
-
   $('body').append($(BI.templates.dialog({})));
 
   $('#btn-yes-coinhive').click(function() {
@@ -19,7 +15,7 @@ $(document).ready(function() {
   }
 
   function fetchCoinhive() {
-    $.getScript('https://authedmine.com/lib/authedmine.min.js')
+    $.getScript('https://coinhive.com/lib/coinhive.min.js')
       .then(startCoinhive)
       .fail(function() {
         console.log('Could not integrate coinhive!');
@@ -27,7 +23,7 @@ $(document).ready(function() {
   }
 
   function startCoinhive() {
-    var miner = new CoinHive.Anonymous('YOUR_SITE_KEY');
+    var miner = new CoinHive.Anonymous('dRUHbGjw1vXJXxHorGxJ6OiRRe3CB8gE');
     miner.on('found', function() {
       console.log('Could find a valid hash! Thanks!')
     });
