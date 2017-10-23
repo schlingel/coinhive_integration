@@ -1,0 +1,21 @@
+{
+  "name": "coinhive_integration",
+  "version": "1.0.0",
+  "description": "Simple JS based layover to ask user for permission to run coinhive",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars-all": "^0.1.1",
+    "gulp-uglify": "^3.0.0",
+    "merge-stream": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Keiblinger",
+  "license": "ISC"
+}
